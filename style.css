@@ -1,0 +1,30 @@
+
+input[type=text], input[type=tel], input[type=email], input[type=password]{
+    border: solid rgb(83, 31, 182);
+}
+input[type=submit]{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: auto;
+    text-decoration: none;
+    margin: auto;
+    cursor: pointer;
+}
+input[type=text]:focus, [type=email]:focus, [type=tel]:focus,
+[type=password]:focus {
+    background-color: lightblue;
+    border: solid #555;
+}
+btn-facebook {
+    background-color: rgba(46, 26, 230, 0.952);
+    color: ;
+}
+btn-google {
+    background-color: rgb(114, 236, 66);
+    color: rgb(182, 88, 88);
+}
+.nav-link:hover{
+    border-top: solid green;
+    border-bottom: solid green;
+}

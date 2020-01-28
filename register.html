@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login form</title>
+
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="forus.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="login-container col-lg-4 col-md-6 col-sm-8 col-xs-12">
+                <div class="login-content">
+                    <div class="login-title">
+                        <center>
+                        <h3><a href="index.html" class="nav-link">EzzBuy</a></h3>
+                        </center>
+                    </div>
+                    <div class="login-body">
+                        <div class="login-header">
+                        <p>
+                            <a href="https://www.google.com" class="btn btn-block btn-google"> <i class="fab fa-google"></i>   Login via
+                                Google</a>
+                            <a href="https://www.facebook.com" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i>   Login via
+                                facebook</a>
+                        </p>
+                        </div>
+                        <form role="form" class="login-form">
+                            <div class="form-group ">
+                                <div class="pos-r">
+                                    <input id="username" type="text" name="username" placeholder="Username"
+                                        class="form-name form-control">
+                                    <i class="fa fa-user"></i>
+                                    <div class="error" id="unameErr"></div>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <div class="pos-r">
+                                    <input id="email" type="text" name="email" placeholder="Email"
+                                        class="form-email form-control">
+                                    <i class="fa fa-envelope"></i>
+                                    <div class="error" id="emailErr"></div>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <div class="pos-r">
+                                    <input id="phone" type="text" name="phone" placeholder="Phone Number"
+                                        class="form-phone form-control">
+                                        <i class="fa fa-phone"></i>
+                                        <div class="error" id="phoneErr"></div>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="pos-r">
+                                    <input id="password" type="password" name="password"
+                                        placeholder="Password" class="form-control">
+                                        <i class="fa fa-lock"></i>
+                                        <div class="error" id="passwErr"></div>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="pos-r">
+                                    <input id="password2" type="password" name="password2"
+                                        placeholder="Confirm Password" class="form-password form-control">
+                                        <i class="fa fa-lock"></i>
+                                        <div class="error" id="passw2Err"></div>
+                                    <span></span>
+                                </div>
+                            </div>
+
+                            <label for="term">
+                                <input type="checkbox" name="term" id="term"> Accept Terms and Condition
+                            </label>
+
+                            <p>By creating an account you agree to our <a href="#">Terms &
+                                    Privacy</a>.</p>
+                            <div class="form-group text-right">
+                                <a href="login.html" id="login"> Already Have an Account</a>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-warning form-control" onclick="return validateForm()"><strong>Sign Up</strong> 
+                                        </button>
+                            </div>
+
+                        </form>
+                    </div><!-- end  login-content -->
+                </div> <!-- end  login-body -->
+            </div> <!-- end  login-container -->
+
+        </div>
+    </div><!-- end container -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
