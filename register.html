@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <title>Login to EzzBuy</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" style="margin: 20% 20%; padding: 50px 50px; border:1px solid pink; width:auto">
+            <form class="col s12">
+                <div class="input-field col s12">
+                    <input type="text" name="username" id="username" class="validate">
+                    <label for="username">Username</label>
+                </div>
+                <div class="input-field col s12">
+                    <input type="email" name="email" id="email" class="validate">
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-field col s12">
+                    <input type="number" name="phone" id="phone" class="validate">
+                    <label for="phone">Phone Number</label>
+                </div>
+                <p>
+                    <label for="gender">
+                        <input name="gender" type="radio" id="gender" value="male" checked />
+                        <span>Male</span>
+                    </label>
+                    <label>
+                        <input name="gender" type="radio" id="gender" value="female"/>
+                        <span>Female</span>
+                    </label>
+                </p>
+                <div class="input-field col s12">
+                    <input type="password" name="pass1" id="pass1" class="validate">
+                    <label for="password">Password</label>
+                </div>
+                <div class="input-field col s12">
+                    <input type="password" name="pass2" id="pass2" class="validate">
+                    <label for="password">Confirm Password</label>
+                </div>
+
+                <div class="center-align">
+                    <button class=" waves-effect wave-light btn-large" type="submit" name="login">LOGIN
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+                <div class="right-align">
+                    <p><a href="forgotpassword.html">Forgot Password?</a></p>
+                    <p><a href="register.html">Don't have an account?</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="js/materialize.min.js"></script>
+</body>
+
+</html>
