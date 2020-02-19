@@ -1,18 +1,21 @@
 function validateForm(){
-    var name = document.forms["regForm"]["username"].value;
-    var email = document.forms["regForm"]["email"].value;
-    var phone = document.forms["regForm"]["phone"].value;
-    var pass1 = document.forms["regForm"]["password"].value;
-    var pass2 = document.forms["regForm"]["password2"].value;
-    var term = document.forms["regForm"]["term"].value;
+    var name = document.getElementById('userid').value
+    var password = document.getElementById('password').value
 
-    if (phone.length > 9){
-        msg = "ENTER VALID PHONE";
-    }
-    else
-    {
-        return true;
-    }
-    document.getElementById("phoneErr").innerText = msg;
 
-}
+    if(name == ''){
+        var h1 = document.createElement('p')
+        var text = document.createTextNode('Please enter name')
+        h1.setAttribute('id','err')
+        h1.appendChild(text)
+        document.getElementById('userlog').appendChild(h1)
+    }
+    if (password == '') {
+        var h1 = document.createElement('p')
+        var text = document.createTextNode('Please enter Password')
+        h1.setAttribute('id', 'err')
+        h1.appendChild(text)
+        document.getElementById('passErr').appendChild(h1)
+    }
+
+};
