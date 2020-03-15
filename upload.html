@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Content upload</title>
+    
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <script src="forus.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="login-container col-lg-4 col-md-6 col-sm-8 col-xs-12">
+            <div class="login-content">
+                <div class="login-title">
+                    <center>
+                        <h3><a href="index.html" class="nav-link">EzzBuy</a></h3>
+                    </center>
+                </div>
+                <div class="login-body">
+                    <div class="login-header">
+                        
+                    </div>
+                    <form role="form" name="UploadForm" class="login-form">
+                        <div class="form-group ">
+                            <div class="pos-r">
+                                <input id="productName" type="text" name="productName" placeholder="Enter Product Name"
+                                    class="form-name form-control">
+                                <i class="fa fa-info"></i>
+                                <div class="error" id="pnameErr"></div>
+                                <span></span>
+                            </div>
+                        </div>
+                    
+                        <div class="form-group ">
+                            <label for="town">Category</label>
+                                <select id="town" name="category" class="form-control">
+                                    <option value="">Maroua</option>
+                                    <option value="">Garoua</option>
+                                    <option value="">Yaounde</option>
+                                    <option value="">Douala</option>
+                                    <option value="">Bertoua</option>
+                                    <option value="">Edea</option>
+                                    <option value="">Buea</option>
+                                    <option value="">Bamenda</option>
+                                    <option value="">Ngaoundere</option>
+                                    <option value="">Baffoussam</option>
+                                </select>
+                                <div class="error" id="catErr"></div>
+                                <span></span>
+                        </div>
+                        <div class="form-group ">
+                            <label for="town">Sub Category</label>
+                                <select id="town" name="subcategory" class="form-control">
+                                    <option value="">Maroua</option>
+                                    <option value="">Garoua</option>
+                                    <option value="">Yaounde</option>
+                                    <option value="">Douala</option>
+                                    <option value="">Bertoua</option>
+                                    <option value="">Edea</option>
+                                    <option value="">Buea</option>
+                                    <option value="">Bamenda</option>
+                                    <option value="">Ngaoundere</option>
+                                    <option value="">Baffoussam</option>
+                                </select>
+                                <div class="error" id="subcatErr"></div>
+                                <span></span>
+                        </div>
+                        <div class="form-group ">
+                            <label for="town">Select Town</label>
+                                <select id="town" name="town" class="form-control">
+                                    <option value="">Maroua</option>
+                                    <option value="">Garoua</option>
+                                    <option value="">Yaounde</option>
+                                    <option value="">Douala</option>
+                                    <option value="">Bertoua</option>
+                                    <option value="">Edea</option>
+                                    <option value="">Buea</option>
+                                    <option value="">Bamenda</option>
+                                    <option value="">Ngaoundere</option>
+                                    <option value="">Baffoussam</option>
+                                </select>
+                                <div class="error" id="townErr"></div>
+                                <span></span>
+                        </div>
+                        <div class="form-group ">
+                            <label for="town">Select Town</label>
+                                <select id="town" name="town" class="form-control">
+                                    <option value="">Maroua</option>
+                                    <option value="">Garoua</option>
+                                    <option value="">Yaounde</option>
+                                    <option value="">Douala</option>
+                                    <option value="">Bertoua</option>
+                                    <option value="">Edea</option>
+                                    <option value="">Buea</option>
+                                    <option value="">Bamenda</option>
+                                    <option value="">Ngaoundere</option>
+                                    <option value="">Baffoussam</option>
+                                </select>
+                                <div class="error" id="townErr"></div>
+                                <span></span>
+                        </div>
+                        <div class="form-group ">
+                            <div class="pos-r">
+                                <input id="phone" type="number" name="phone" placeholder="Product Price"
+                                    class="form-phone form-control">
+                                <i class="fa fa-money-bill-alt"></i>
+                                <div class="error" id="priceErr"></div>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <div class="pos-r">
+                                <input id="phone" type="number" name="phone" placeholder="Phone Number"
+                                    class="form-phone form-control">
+                                <i class="fa fa-phone"></i>
+                                <div class="error" id="phoneErr"></div>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="form-gropu">
+                            <label for="description">Description</label>
+                            <textarea name="description" id="description" cols="5" rows="5" class="form-control">Enter product description</textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="file" class="form-control" id="customFile" multiple>
+                            <label class="custom-file-label" for="customFile">Choose file</label>
+                        </div>
+
+                        <label for="term">
+                            <input type="checkbox" name="term" id="term"> Accept Terms and Condition
+                        </label>
+
+                        <div class="form-group">
+                            <button class="btn btn-warning form-control" type="submit"><strong>Upload</strong>
+                            </button>
+                        </div>
+
+                    </form>
+                </div><!-- end  login-content -->
+            </div> <!-- end  login-body -->
+        </div> <!-- end  login-container -->
+
+    </div>
+</div><!-- end container
+</body>
+</html>

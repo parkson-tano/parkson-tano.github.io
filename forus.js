@@ -13,7 +13,7 @@ function validateForm(){
     if (password == '') {
         var h1 = document.createElement('p')
         var text = document.createTextNode('Please enter Password')
-        h1.setAttribute('id', 'err')
+        h1.setAttribute('id','err')
         h1.appendChild(text)
         document.getElementById('passErr').appendChild(h1)
     }
