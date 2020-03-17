@@ -30,7 +30,7 @@
                         </center>
                     </div>
                     <div class="login-body">
-                        <form role="form" class="login-form" onsubmit="return validateForm()">
+                        <form role="form" class="was-validated">
                             <!-- <p>
                                 <a href="https://www.google.com" class="btn btn-block btn-google"> <i class="fab fa-google"></i>   Login via
                                     Google</a>
@@ -40,28 +40,26 @@
                             <div class="form-group ">
                                 <div class="pos-r">
                                     <input id="userid" type="text" name="form-username" placeholder="Username or Email"
-                                        class="form-username form-control">
+                                        class="form-control" required>
                                     <i class="fa fa-user"></i>
-                                    <div class="error" id="userlog"></div>
+                                    <div class="invalid-feedback">Enter username or email</div>
                                     <span></span>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="pos-r">
                                     <input id="password" type="password" name="form-password"
-                                        placeholder="Password" class="form-password form-control">
+                                        placeholder="Password" class="form-control" required>
                                     <i class="fa fa-lock"></i>
-                                    <div class="error" id="passErr"></div>
+                                    <div class="invalid-feedback">Enter password</div>
                                     <span></span>
                                 </div>
                             </div>
                             <div class="form-group text-right">
                                 <a href="forgotpassword.html" class="bold"> Forgot password?</a>
                             </div>
-
-                            <div class="form-group">
-                                <button class="btn btn-warning form-control" type="submit">Log In</button>
-                            </div>
+                                <button class="btn btn-warning btn-block" type="submit">Log In</button>
+                            
 
                         </form>
                         <div class="login-footer text-center template">
