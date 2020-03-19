@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
     <!-- Favicon and touch icons -->
     <link rel="shortcut icon" href="assets/ico/favicon.png">
@@ -19,24 +18,21 @@
 <body>
 <div class="container">
     <div class="row">
-        <div class="login-container col-lg-4 col-md-6 col-sm-8 col-xs-12">
-            <div class="login-content">
-                <div class="login-title">
-                    <center>
-                        <h3><a href="index.html" class="nav-link">EzzBuy</a></h3>
-                    </center>
-                </div>
+        <div class="form-container col-lg-4 col-md-6 col-sm-8 col-xs-12">
+
                         
-                    </div>
                     <form role="form" name="UploadForm" class="was-validated">
+                        <div class="form-title">
+                            <center>
+                                <h3><a href="index.html" class="nav-link">EzzBuy</a></h3>
+                            </center>
+                        </div>   
                         <div class="form-group ">
-                            <div class="pos-r">
                                 <input id="productName" type="text" name="productName" placeholder="Enter Product Name"
                                     class="form-name form-control" required>
                                 <i class="fa fa-info"></i>
                                 <div class="invalid-feedback">Enter product name</div>
                                 <span></span>
-                            </div>
                         </div>
                     
                         <div class="form-group ">
@@ -129,7 +125,7 @@
                                 <span></span>
                             </div>
                         </div>
-                        <div class="form-gropu">
+                        <div class="form-group">
                             <label for="description">Description</label>
                             <textarea name="description" id="description" cols="5" rows="5" class="form-control" placeholder="enter description" required></textarea>
                             <div class="invalid-feedback">Enter product description</div>
