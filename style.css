@@ -1,40 +1,30 @@
-.form-container{
-    margin: 50px 50px;
-    margin-left: 30%;
-    margin-right: 50%;
-    border: gray;
-} 
-.form-group{
-    border-style: none;
-    box-shadow: none;
-    margin: 2px 2px 2px;
-}
 
-.form-group input[type=text], input[type=number]{
-    outline: none;
-    padding: 5px 5px;
-    box-shadow: none !important;
-    border-style: none none solid;
-    border-bottom-color: green;
-    border-style: none none solid;
-    border-bottom-color: green;
+input[type=text], input[type=tel], input[type=email], input[type=password]{
+    border: solid rgb(83, 31, 182);
 }
-.form-group textarea{
-    outline: none;
-    box-shadow: none !important;
-   
-
+input[type=submit]{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: auto;
+    text-decoration: none;
+    margin: auto;
+    cursor: pointer;
 }
-.form-group input:focus{
-    outline: none;
-    box-shadow: none;
-    border: .5px solid #34eb49;
+input[type=text]:focus, [type=email]:focus, [type=tel]:focus,
+[type=password]:focus {
+    background-color: lightblue;
+    border: solid #555;
 }
-.form-group textarea:focus{
-    outline: none;
-    box-shadow: none;
-    border: .5px solid #34eb49;
+btn-facebook {
+    background-color: rgba(46, 26, 230, 0.952);
+    color: ;
 }
-.form-group label{
-    padding: 5px 5px;
+btn-google {
+    background-color: rgb(114, 236, 66);
+    color: rgb(182, 88, 88);
+}
+.nav-link:hover{
+    border-top: solid green;
+    border-bottom: solid green;
 }
