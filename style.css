@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .form-container{
     margin: 50px 50px;
     margin-left: 30%;
@@ -37,4 +38,45 @@
 }
 .form-group label{
     padding: 5px 5px;
+=======
+.form-container{
+    margin: 50px 50px;
+    margin-left: 30%;
+    margin-right: 50%;
+    border: gray;
+} 
+.form-group{
+    border-style: none;
+    box-shadow: none;
+    margin: 2px 2px 2px;
+}
+
+.form-group input[type=text], input[type=number]{
+    outline: none;
+    padding: 5px 5px;
+    box-shadow: none !important;
+    border-style: none none solid;
+    border-bottom-color: green;
+    border-style: none none solid;
+    border-bottom-color: green;
+}
+.form-group textarea{
+    outline: none;
+    box-shadow: none !important;
+   
+
+}
+.form-group input:focus{
+    outline: none;
+    box-shadow: none;
+    border: .5px solid #34eb49;
+}
+.form-group textarea:focus{
+    outline: none;
+    box-shadow: none;
+    border: .5px solid #34eb49;
+}
+.form-group label{
+    padding: 5px 5px;
+>>>>>>> 0898552f3f4917ed70f81d2f07f4b1b36e331f1a
 }
