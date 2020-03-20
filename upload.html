@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 0898552... new style
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +25,11 @@
         <div class="form-container col-lg-4 col-md-6 col-sm-8 col-xs-12">
 
                         
+<<<<<<< HEAD
                     <form role="form" name="UploadForm">
+=======
+                    <form role="form" name="UploadForm" class="was-validated">
+>>>>>>> parent of 0898552... new style
                         <div class="form-title">
                             <center>
                                 <h3><a href="index.html" class="nav-link">EzzBuy</a></h3>
@@ -30,12 +37,23 @@
                         </div>   
                         <div class="form-group ">
                                 <input id="productName" type="text" name="productName" placeholder="Enter Product Name"
+<<<<<<< HEAD
                                     class="form-name form-control" >
+=======
+                                    class="form-name form-control" required>
+                                <i class="fa fa-info"></i>
+                                <div class="invalid-feedback">Enter product name</div>
+                                <span></span>
+>>>>>>> parent of 0898552... new style
                         </div>
                     
                         <div class="form-group ">
                             <label for="town">Category</label>
+<<<<<<< HEAD
                                 <input type="text" id="town" list="cate" name="category" class="form-control" >
+=======
+                                <input type="text" id="town" list="cate" name="category" class="form-control" required>
+>>>>>>> parent of 0898552... new style
                                 <datalist id="cate">
                                     <option value="Maroua">
                                     <option value="Garoua">
@@ -48,10 +66,19 @@
                                     <option value="Ngaoundere">
                                     <option value="Baffoussam">
                                 </datalist>
+<<<<<<< HEAD
                         </div>
                         <div class="form-group ">
                             <label for="subcategory">Sub Category</label>
                             <input type="text" name="subcat" list="scat" id="subcat" class="form-control" >
+=======
+                                <div class="invalid-feedback">Select Category</div>
+                                <span></span>
+                        </div>
+                        <div class="form-group ">
+                            <label for="subcategory">Sub Category</label>
+                            <input type="text" name="subcat" list="scat" id="subcat" class="form-control" required>
+>>>>>>> parent of 0898552... new style
                             <datalist id="scat">
                                 <option value="Centre">
                                 <option value="Littoral">
@@ -64,10 +91,19 @@
                                 <option value="East">
                                 <option value="sss">
                             </datalist>
+<<<<<<< HEAD
                         </div>
                         <div class="form-group ">
                             <label for="region">Select Region</label>
                                 <input type="text" name="region" list="regions" id="region" class="form-control" >
+=======
+                                <div class="invalid-feedback">Select region</div>
+                                <span></span>
+                        </div>
+                        <div class="form-group ">
+                            <label for="region">Select Region</label>
+                                <input type="text" name="region" list="regions" id="region" class="form-control" required>
+>>>>>>> parent of 0898552... new style
                                 <datalist id="regions">
                                     <option value="Centre">
                                     <option value="Littoral">
@@ -80,10 +116,19 @@
                                     <option value="East">
                                     <option value="sss">
                                 </datalist>
+<<<<<<< HEAD
                         </div>
                         <div class="form-group ">
                             <label for="town">Select Town</label>
                                 <input type="text" name="region" list="regions" id="region" class="form-control" >
+=======
+                                <div class="invalid-feedback">Select region</Select></div>
+                                <span></span>
+                        </div>
+                        <div class="form-group ">
+                            <label for="town">Select Town</label>
+                                <input type="text" name="region" list="regions" id="region" class="form-control" required>
+>>>>>>> parent of 0898552... new style
                                 <datalist id="regions">
                                     <option value="Centre">
                                     <option value="Littoral">
@@ -96,21 +141,41 @@
                                     <option value="East">
                                     <option value="sss">
                                 </datalist>
+<<<<<<< HEAD
+=======
+                               <div class="invalid-feedback">select town</div>
+                                <span></span>
+>>>>>>> parent of 0898552... new style
                         </div>
                         <div class="form-group ">
                             <div class="pos-r">
                                 <input id="price" type="number" name="price" placeholder="Product Price"
+<<<<<<< HEAD
                                     class="form-control" >
+=======
+                                    class="form-control" required>
+                                <i class="fa fa-money-bill-alt"></i>
+                                <div class="invalid-feedback">Enter a valid price</div>
+                                <span></span>
+>>>>>>> parent of 0898552... new style
                             </div>
                         </div>
                         <div class="form-group ">
                             <div class="pos-r">
                                 <input id="phone" type="number" name="phone" placeholder="Phone Number"
+<<<<<<< HEAD
                                     class="form-control" >
+=======
+                                    class="form-control" required>
+                                <i class="fa fa-phone"></i>
+                                <div class="invalid-feedback">Enter a valid phone number</div>
+                                <span></span>
+>>>>>>> parent of 0898552... new style
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="description">Description</label>
+<<<<<<< HEAD
                             <textarea name="description" id="description" cols="5" rows="5" class="form-control" placeholder="enter description" ></textarea>
                         </div>
                         <div class="form-group">
@@ -255,6 +320,25 @@
                         </label> 
                         </div>
                             <button class="btn btn-warning btn-block" type="submit">Upload</button>
+=======
+                            <textarea name="description" id="description" cols="5" rows="5" class="form-control" placeholder="enter description" required></textarea>
+                            <div class="invalid-feedback">Enter product description</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="photos">Product Photos</label>
+                            <input type="file" class="form-control" id="customFile" multiple required>
+                            <div class="invalid-feedback">Select atleast one photo</div>
+                        </div>
+                        <div class="form-group form-check">
+                            <label for="term">
+                            <input class="form-check-input" type="checkbox" name="term" id="term" required> Accept Terms and Condition
+                            <div class="invalid-feedback">Please Accept terms and Condition</div>
+                        </label> 
+                        </div>
+                    
+                            <button class="btn btn-warning btn-block" type="submit">Upload
+                            </button>
+>>>>>>> parent of 0898552... new style
 
                     </form>
         </div> <!-- end  login-container -->
@@ -262,5 +346,8 @@
     </div>
 </div><!-- end container
 </body>
+<<<<<<< HEAD
 >>>>>>> 0898552f3f4917ed70f81d2f07f4b1b36e331f1a
+=======
+>>>>>>> parent of 0898552... new style
 </html>
