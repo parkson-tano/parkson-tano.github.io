@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 .form-container{
     margin: 50px 50px;
     margin-left: 30%;
@@ -9,6 +8,7 @@
 .form-group{
     border-style: none;
     box-shadow: none;
+    padding: 10px;
     margin: 2px 2px 2px;
 }
 
@@ -21,10 +21,7 @@
     border-style: none none solid;
     border-bottom-color: green;
 }
-.form-group textarea{
-    outline: none;
-    box-shadow: none !important;
-   
+
 
 }
 .form-group input:focus{
@@ -37,33 +34,16 @@
     box-shadow: none;
     border: .5px solid #34eb49;
 }
-.form-group label{
-    padding: 5px 5px;
-=======
-.form-container{
-    margin: 50px 50px;
-    margin-left: 30%;
-    margin-right: 50%;
-    border: gray;
-} 
 .form-group{
     border-style: none;
     box-shadow: none;
     margin: 2px 2px 2px;
 }
 
-.form-group input[type=text], input[type=number]{
-    outline: none;
-    padding: 5px 5px;
-    box-shadow: none !important;
-    border-style: none none solid;
-    border-bottom-color: green;
-    border-style: none none solid;
-    border-bottom-color: green;
-}
 .form-group textarea{
     outline: none;
     box-shadow: none !important;
+    border:.5px solid black;
    
 
 }
@@ -76,39 +56,4 @@
     outline: none;
     box-shadow: none;
     border: .5px solid #34eb49;
-}
-.form-group label{
-    padding: 5px 5px;
->>>>>>> 0898552f3f4917ed70f81d2f07f4b1b36e331f1a
-=======
-
-input[type=text], input[type=tel], input[type=email], input[type=password]{
-    border: solid rgb(83, 31, 182);
-}
-input[type=submit]{
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: auto;
-    text-decoration: none;
-    margin: auto;
-    cursor: pointer;
-}
-input[type=text]:focus, [type=email]:focus, [type=tel]:focus,
-[type=password]:focus {
-    background-color: lightblue;
-    border: solid #555;
-}
-btn-facebook {
-    background-color: rgba(46, 26, 230, 0.952);
-    color: ;
-}
-btn-google {
-    background-color: rgb(114, 236, 66);
-    color: rgb(182, 88, 88);
-}
-.nav-link:hover{
-    border-top: solid green;
-    border-bottom: solid green;
->>>>>>> parent of 0898552... new style
 }
