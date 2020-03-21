@@ -8,8 +8,8 @@
 .form-group{
     border-style: none;
     box-shadow: none;
-    padding: 15px 10px 15px;
-    margin: 2px 2px 2px;
+    padding: 30px 10px 0px;
+    margin: auto;
 }
 
 .form-group input[type=text], input[type=number], input[type=email],input[type=password]{
@@ -20,9 +20,6 @@
     border-bottom-color: green;
     border-style: none none solid;
     border-bottom-color: green;
-}
-
-
 }
 .form-group input:focus{
     outline: none;
