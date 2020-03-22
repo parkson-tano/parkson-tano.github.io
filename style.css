@@ -6,9 +6,9 @@ p{
 }
 @media screen and (max-width: 500px) {
   p {
-    color: #0a0a0a;
+    color: #000000;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 20px;
     margin: auto;
   }
 }
