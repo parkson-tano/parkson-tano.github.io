@@ -4,7 +4,14 @@
     margin-left: 30%;
     margin-right: 50%;
     border: gray;
+    float: center;
 } 
+.form-title a{
+    float: center;
+    color: red;
+    border-style: dotted;
+    border-radius: 50%;
+}
 .form-group{
     border-style: none;
     box-shadow: none;
@@ -19,7 +26,7 @@
     border-style: none none solid;
     border-bottom-color: green;
     border-style: none none solid;
-    border-bottom-color: green;
+    border-bottom-color: tan;
 }
 .form-group input:focus{
     outline: none;

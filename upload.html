@@ -34,8 +34,7 @@
                         </div>
                     
                         <div class="form-group ">
-                            <label for="town">Category</label>
-                                <input type="text" id="town" list="cate" name="category" class="form-control" >
+                                <input type="text" id="town" list="cate" name="category" class="form-control" placeholder="Select Category">
                                 <datalist id="cate">
                                     <option value="Maroua">
                                     <option value="Garoua">
@@ -50,8 +49,8 @@
                                 </datalist>
                         </div>
                         <div class="form-group ">
-                            <label for="subcategory">Sub Category</label>
-                            <input type="text" name="subcat" list="scat" id="subcat" class="form-control" >
+                            <input type="text" name="subcat" list="scat" id="subcat" class="form-control"
+                            placeholder="Select Sub Category">
                             <datalist id="scat">
                                 <option value="Centre">
                                 <option value="Littoral">
@@ -66,8 +65,7 @@
                             </datalist>
                         </div>
                         <div class="form-group ">
-                            <label for="region">Select Region</label>
-                                <input type="text" name="region" list="regions" id="region" class="form-control" >
+                                <input type="text" name="region" list="regions" id="region" class="form-control" placeholder="Select Region">
                                 <datalist id="regions">
                                     <option value="Centre">
                                     <option value="Littoral">
@@ -82,8 +80,7 @@
                                 </datalist>
                         </div>
                         <div class="form-group ">
-                            <label for="town">Select Town</label>
-                                <input type="text" name="region" list="regions" id="region" class="form-control" >
+                                <input type="text" name="region" list="regions" id="region" class="form-control" placeholder="Select Town">
                                 <datalist id="regions">
                                     <option value="Centre">
                                     <option value="Littoral">
@@ -98,29 +95,22 @@
                                 </datalist>
                         </div>
                         <div class="form-group ">
-                            <div class="pos-r">
                                 <input id="price" type="number" name="price" placeholder="Product Price"
                                     class="form-control" >
-                            </div>
                         </div>
                         <div class="form-group ">
-                            <div class="pos-r">
                                 <input id="phone" type="number" name="phone" placeholder="Phone Number"
                                     class="form-control" >
-                            </div>
                         </div>
                         <div class="form-group">
-                            <label for="description">Description</label>
                             <textarea name="description" id="description" cols="5" rows="5" class="form-control" placeholder="enter description" ></textarea>
                         </div>
                         <div class="form-group">
                             <label for="photos">Product Photos</label>
-                            <input type="file" class="form-control" id="customFile" multiple >
+                            <input type="file" class="form-control-file" id="customFile" multiple >
                         </div>
                         <div class="form-group form-check">
-                            <label for="term">
                             <input class="form-check-input" type="checkbox" name="term" id="term" > Accept Terms and Condition
-                        </label> 
                         </div>
                             <button class="btn btn-warning btn-block" type="submit">Upload</button>
 
