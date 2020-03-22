@@ -1,16 +1,18 @@
 
 .form-container{
-    margin: 50px 50px;
-    margin-left: 30%;
-    margin-right: 50%;
-    border: gray;
-    float: center;
+    width: 100%;
+    margin: 50px auto 50px;
+    float: none;
 } 
+ .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
 .form-title a{
     float: center;
-    color: red;
-    border-style: dotted;
-    border-radius: 50%;
+    margin: auto;
+    width: 100%;
+    text-align: center;
 }
 .form-group{
     border-style: none;
@@ -49,7 +51,6 @@
     box-shadow: none !important;
     border:.5px solid black;
    
-
 }
 .form-group input:focus{
     outline: none;
