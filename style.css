@@ -1,8 +1,14 @@
-p{
+.carousel p{
     color: #0a0a0a;
     font-weight: bold;
     font-size: 30px;
     margin: auto;
+}
+
+#searchForm{
+    float: center;
+    position: absolute;
+    top: 40%;
 }
 @media screen and (max-width: 500px) {
   p {
@@ -23,7 +29,7 @@ p{
   }
 .form-title a{
     float: center;
-    margin: auto;
+    margin: 0 auto -30px;
     width: 100%;
     text-align: center;
 }
@@ -78,3 +84,4 @@ p{
 .fas{
     font-size: 20px;
 }
+
