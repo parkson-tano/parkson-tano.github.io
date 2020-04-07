@@ -1,88 +1,73 @@
-function validateForm(){
-    var name = document.getElementById('userid').value
-    var password = document.getElementById('password').value
-
-
-    if(name == ''){
-        var h1 = document.createElement('p')
-        var text = document.createTextNode('Please enter name')
-        h1.setAttribute('id','err')
-        h1.appendChild(text)
-        document.getElementById('userlog').appendChild(h1)
+/* var app1 = new Vue({
+    el: '#app-1',
+    data: {
+        message: 'hello there'
     }
-    if (password == '') {
-        var h1 = document.createElement('p')
-        var text = document.createTextNode('Please enter Password')
-        h1.setAttribute('id','err')
-        h1.appendChild(text)
-        document.getElementById('passErr').appendChild(h1)
+})
+
+var app2 = new Vue({
+    el: '#app-2',
+    data: {
+        'seen': true
+    }
+})
+
+var app3 = new Vue({
+    el: '#app-3',
+    data: {
+        message: 'the time now is ' + new Date().toLocaleString()
+    }
+})
+
+var app4 = new Vue({
+    el: '#app-4',
+    data: {
+        todos: [
+            { text: 'item 1' },
+            { text: 'item 2' },
+            { text: 'item 3' }
+        ]
+    },
+    methods: {
+        add: function() {
+            app4.todos.push({ text: this.item })
+        }
     }
 
-};
-<select>
-  <optgroup label="Mammals">
-    <option>Cat</option>
-    <option>Dog</option>
-  </optgroup>
-  <optgroup label="Birds">
-    <option>Crow</option>
-    <option>Eagle</option>
-  </optgroup>
-  <optgroup label="Dinosaurs">
-    <option>Raptor</option>
-    <option>Tyrannosaurus</option>
-    <option>Brachiosaurus</option>
-  </optgroup>
-</select>
-<select class="selectpicker">
-  <optgroup label="Picnic">
-    <option>Mustard</option>
-    <option>Ketchup</option>
-    <option>Relish</option>
-  </optgroup>
-  <optgroup label="Camping">
-    <option>Tent</option>
-    <option>Flashlight</option>
-    <option>Toilet Paper</option>
-  </optgroup>
-</select>
-//search
-<select class="selectpicker" data-live-search="true">
-  <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
-  <option data-tokens="mustard">Burger, Shake and a Smile</option>
-  <option data-tokens="frosting">Sugar, Spice and all things nice</option>
-</select>
-<select class="selectpicker" data-style="btn-primary">
-  ...
-</select>
+})
 
-<select class="selectpicker" data-style="btn-info">
-  ...
-</select>
+var app5 = new Vue({
+    el: '#app-5',
+    data: {
+        message: 'hello daniel'
+    },
 
-<select class="selectpicker" data-style="btn-success">
-  ...
-</select>
+})
 
-<select class="selectpicker" data-style="btn-warning">
-  ...
-</select>
+var app6 = new Vue({
+    el: '#app-6',
+    data: {
+        message: 'hellow'
+    },
+    methods: {
+        reverseMessage: function() {
+            this.message = this.message.split('').reverse().join('')
+        }
+    }
+})
+var app7 = new Vue({
+    el: '#app-7',
+    data: {
+        clickThis: function() {
+            alert('hello')
+        }
+    }
+}) */
 
-<select class="selectpicker" data-style="btn-danger">
-  ...
-</select>
-<select class="selectpicker" data-width="auto">
-  ...
-</select>
-<select class="selectpicker" data-width="fit">
-  ...
-</select>
-<select class="selectpicker" data-width="100px">
-  ...
-</select>
-<select class="selectpicker" data-width="75%">
-  ...
-</select>
-<select class="selectpicker">
-  <option data-icon="fa-heart">Ketchup</option>
-</select>
+function show() {
+    day = new Date()
+    document.getElementById('tim').innerHTML = day.toLocaleString();
+    window.print()
+}
+
+prompt('what\'s you name')

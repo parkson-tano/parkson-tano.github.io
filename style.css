@@ -42,6 +42,7 @@
 .select-cat{
     outline: none;
     box-shadow: none !important;
+    padding-bottom: auto;
     border-style: none none solid;
     border-bottom-color: green;
     border-style: none none solid;
