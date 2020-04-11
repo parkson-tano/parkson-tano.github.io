@@ -40,7 +40,7 @@ $(function() {
     }
 
     function check_phone() {
-        var pattern = /^[1-9]*$/;
+        var pattern = /\d/;
         var phone = $("#phone").val()
         if (pattern.test(phone) && phone !== '') {
             $("#phone_error_message").hide();
