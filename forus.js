@@ -83,7 +83,7 @@ $(function() {
 
     function check_email() {
         var pattern = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-        var email = $("#form_email").val();
+        var email = $("#email").val();
         if (pattern.test(email) && email !== '') {
             $("#email_error_message").hide();
             $("#email").css("border-bottom", "2px solid #34F458");
