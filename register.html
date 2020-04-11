@@ -10,47 +10,54 @@
 
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
     <!-- Favicon and touch icons -->
     <link rel="stylesheet" href="style.css">
+    <script src="jquery.js"></script>
     <script src="forus.js"></script>
 
 </head>
 
 <body>
-<div class="container">
-    <div class="row">
-        <div class="form-container col-lg-4 col-md-6 col-sm-12 col-xs-12 mp-auto">
-                        <form role="form" name="regForm">
-                            <div class="form-title">
-                                    <a href="index.html" class="nav-link">
-                                        <img src="log.jpg" height="100px" width="100px">
-                                    </a>
-                            </div>
-                            <div class="form-group ">
-                                    <input id="username" type="text" name="username" placeholder="Username"
-                                        class="form-control" >
-                            </div>
-                            <div class="form-group ">
-                                    <input id="email" type="email" name="email" placeholder="Email"
-                                        class="form-control">
-                            </div>
-                            <div class="form-group ">
-                                    <input id="phone" type="number" name="phone" placeholder="Phone Number"
-                                        class="form-control">
-                            </div>
-                            <div class="form-group">
-                                    <input id="password" type="password" name="password"
-                                        placeholder="Password" class="form-control" >
-                            </div>
-                            <div class="form-group">
-                                    <input id="password2" type="password" name="password2"
-                                        placeholder="Confirm Password" class="form-password form-control">
-                            </div>
-                            <div class="form-group form-check">
-                            <label for="term">
+    <div class="container">
+        <div class="row">
+            <div class="form-container col-lg-4 col-md-6 col-sm-12 col-xs-12 mp-auto">
+                <div class="form-title">
+                    <a href="index.html">
+                        <img src="log.jpg" height="100px" width="100px">
+                    </a>
+                </div>
+                <form role="form" name="regForm" id="regForm">
+
+                    <div class="form-group ">
+                        <input id="username" type="text" name="username" placeholder="Username" class="form-control">
+                        <span class="alert-sm alert-danger" id="username_error_message"></span>
+                        <label>*</label>
+                    </div>
+                    <div class="form-group ">
+                        <input id="email" type="email" name="email" placeholder="Email" class="form-control">
+                        <span class="alert-sm alert-danger" id="email_error_message"></span>
+                        <label>*</label>
+                    </div>
+                    <div class="form-group ">
+                        <input id="phone" type="number" name="phone" placeholder="Phone Number" class="form-control">
+                        <span class="alert-sm alert-danger" id="phone_error_message"></span>
+                        <label>*</label>
+                    </div>
+                    <div class="form-group">
+                        <input id="password" type="password" name="password" placeholder="Password" class="form-control">
+                        <span class="alert-sm alert-danger" id="password_error_message"></span>
+                        <label>*</label>
+                    </div>
+                    <div class="form-group">
+                        <input id="password2" type="password" name="password2" placeholder="Confirm Password" class="form-password form-control">
+                        <span class="alert-sm alert-danger" id="password2_error_message"></span>
+                        <label>*</label>
+                    </div>
+                    <div class="form-group form-check">
+                        <label for="term">
                                 <input class="form-group-check" type="checkbox" name="term" id="term" > Accept Terms and Condition
-                            </div>
+                    </div>
                             <p>By creating an account you agree to our <a href="#">Terms &
                                     Privacy</a>.</p>
                             <div class="form-group text-right">
@@ -69,4 +76,3 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </body>
-

@@ -1,45 +1,59 @@
-.carousel p{
+.carousel p {
     color: #0a0a0a;
     font-weight: bold;
     font-size: 30px;
     margin: auto;
 }
 
-#searchForm{
+#searchForm {
     float: center;
     position: absolute;
     top: 40%;
 }
+
 @media screen and (max-width: 500px) {
-  p {
-    color: #000000;
-    font-weight: bold;
-    font-size: 20px;
-    margin: auto;
-  }
+    p {
+        color: #000000;
+        font-weight: bold;
+        font-size: 20px;
+        margin: auto;
+    }
 }
-.form-container{
+
+.form-container {
     width: 100%;
-    margin: 50px auto 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 20px;
     float: none;
-} 
- .carousel-inner img {
+}
+
+.carousel-inner img {
     width: 100%;
     height: 100%;
-  }
-.form-title a{
+}
+
+.form-title img {
     float: center;
-    margin: 0 auto -30px;
-    width: 100%;
+    margin: auto;
+    position: relative;
+    left: 35%;
+    width: 30%;
+    border: 1px solid red;
+    border-radius: 50%;
     text-align: center;
 }
-.form-group{
+
+.form-group {
     border-style: none;
     box-shadow: none;
-    padding: 30px 10px 0px;
+    padding: auto;
     margin: auto;
 }
-.select-cat{
+
+.select-cat {
     outline: none;
     box-shadow: none !important;
     padding-bottom: auto;
@@ -48,12 +62,17 @@
     border-style: none none solid;
     border-bottom-color: tan;
 }
-.form-group select:focus{
+
+.form-group select:focus {
     outline: none;
     box-shadow: none;
     border: .5px solid #34eb49;
 }
-.form-group input[type=text], input[type=number], input[type=email],input[type=password]{
+
+.form-group input[type=text],
+input[type=number],
+input[type=email],
+input[type=password] {
     outline: none;
     padding: 10px 5px;
     box-shadow: none !important;
@@ -62,39 +81,43 @@
     border-style: none none solid;
     border-bottom-color: tan;
 }
-.form-group input:focus{
+
+.form-group input:focus {
     outline: none;
     box-shadow: none;
     border: .5px solid #34eb49;
 }
-.form-group textarea:focus{
+
+.form-group textarea:focus {
     outline: none;
     box-shadow: none;
     border: .5px solid #34eb49;
 }
-.form-group{
+
+.form-group {
     border-style: none;
     box-shadow: none;
     margin: 2px 2px 2px;
 }
 
-.form-group textarea{
+.form-group textarea {
     outline: none;
     box-shadow: none !important;
-    border:.5px solid black;
-   
-}
-.form-group input:focus{
-    outline: none;
-    box-shadow: none;
-    border: .5px solid #34eb49;
-}
-.form-group textarea:focus{
-    outline: none;
-    box-shadow: none;
-    border: .5px solid #34eb49;
-}
-.fas{
-    font-size: 20px;
+    border: .5px solid black;
 }
 
+.form-group input:focus {
+    outline: none;
+    box-shadow: none;
+    border: .5px solid #34eb49;
+}
+
+.form-group textarea:focus {
+    outline: none;
+    box-shadow: none;
+    border: .5px solid #34eb49;
+}
+
+.fas {
+    font-size: 20px;
+}
