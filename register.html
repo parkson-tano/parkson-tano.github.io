@@ -14,7 +14,7 @@
     <!-- Favicon and touch icons -->
     <link rel="stylesheet" href="style.css">
     <script src="jquery.js"></script>
-    <script src="forus.js"></script>
+
 
 </head>
 
@@ -55,23 +55,27 @@
                         <label>*</label>
                     </div>
                     <div class="form-group form-check">
-                        <label for="term">
-                                <input class="form-group-check" type="checkbox" name="term" id="term" > Accept Terms and Condition
+                        <input class="form-group-check" type="checkbox" name="term" id="term"> Accept Terms and Condition
+                        <span class="alert-sm alert-danger" id="term_error_message"></span>
                     </div>
-                            <p>By creating an account you agree to our <a href="#">Terms &
+                    <p>By creating an account you agree to our <a href="#">Terms &
                                     Privacy</a>.</p>
-                            <div class="form-group text-right">
-                                <a href="login.html" id="login"> Already Have an Account</a>
-                            </div>
-                            <button class="btn btn-warning btn-block" type="submit">Sign Up</button>
+                    <div class="form-group text-right">
+                        <a href="login.html" id="login"> Already Have an Account</a>
+                    </div>
+                    <button class="btn btn-warning btn-block" type="submit">Sign Up</button>
 
-                        </form>
-                    </div><!-- end  form-content -->
-            </div> <!-- end  form-container -->
-
+                </form>
+            </div>
+            <!-- end  form-content -->
         </div>
-    </div><!-- end container -->
+        <!-- end  form-container -->
 
+    </div>
+    </div>
+
+    <!-- end container -->
+    <script src="forus.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 

@@ -4,11 +4,13 @@ $(function() {
     $("#email_error_message").hide();
     $("#password_error_message").hide();
     $("#password2_error_message").hide();
+    $("#term_error_message").hide()
     var error_username = false;
     var error_phone = false;
     var error_email = false;
     var error_password = false;
     var error_password2 = false;
+    var error_term = false;
     $("#username").focusout(function() {
         check_username();
     });
@@ -24,6 +26,19 @@ $(function() {
     $("#password2").focusout(function() {
         check_password2();
     });
+    $("#term").focusout(function() {
+        check_term()
+    });
+
+    function check_term() {
+        if ($("#term") === true) {
+            $("#term_error_message").hide();
+        } else {
+            $("#term_error_message").html("Please accept our terms and conditions");
+            $("#term_error_message").show();
+            error_term = true;
+        }
+    }
 
     function check_username() {
         var pattern = /^[a-zA-Z]*$/;
@@ -42,7 +57,7 @@ $(function() {
     function check_phone() {
         var pattern = /\d/;
         var phone = $("#phone").val()
-        if (pattern.test(phone) && phone !== '') {
+        if (pattern.test(phone) && phone !== '' && phone.length < 9) {
             $("#phone_error_message").hide();
             $("#phone").css("border-bottom", "2px solid #34F458");
         } else {
@@ -100,12 +115,15 @@ $(function() {
         error_email = false;
         error_password = false;
         error_password2 = false;
+        error_term = false
         check_username();
         check_phone();
         check_email();
         check_password();
         check_password2();
-        if (error_username === false && error_phone === false && error_email === false && error_password === false && error_password2 === false) {
+        check_term();
+        if (error_username === false && error_phone === false && error_email === false && error_password === false && error_password2 === false &&
+            error_term === false) {
             alert("Registration Successfull");
             return true;
         } else {
