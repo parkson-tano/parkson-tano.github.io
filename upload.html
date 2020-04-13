@@ -1,78 +1,100 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Content upload</title>
-    
+
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
     <!-- Favicon and touch icons -->
     <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <script src="jquery.js"></script>
     <script src="forus.js"></script>
 
 </head>
-<body>
-<div class="container">
-    <div class="row">
-        <div class="form-container col-lg-4 col-md-6 col-sm-8 col-xs-12">
 
-                    <form role="form" name="UploadForm">
-                         <div class="form-title">
-                                    <a href="index.html" class="nav-link">
-                                        <img src="log.jpg" height="100px" width="100px">
-                                    </a>
-                            </div>  
-                        <div class="form-group ">
-                                <input id="productName" type="text" name="productName" placeholder="Enter Product Name"
-                                    class="form-control">
-                        </div>
-                        <div class="form-group ">
-                            <select class="form-control select-cat" >
-                                <option value="#">Select Product Category</option>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="form-container col-lg-4 col-md-6 col-sm-8 col-xs-12">
+
+                <form role="form" name="UploadForm" id="UploadForm">
+                    <div class="form-title">
+                        <a href="index.html" class="nav-link">
+                            <img src="log.jpg" height="100px" width="100px">
+                        </a>
+                    </div>
+                    <div class="form-group ">
+                        <input id="productName" type="text" name="productName" placeholder="Enter Product Name" class="form-control">
+                        <span class="alert-danger" id="productName_error_message"></span>
+                        <label for="">*</label>
+                    </div>
+                    <div class="form-group ">
+                        <select class="form-control select-cat" id="category">
+                                <option value="">Select Product Category</option>
                               <optgroup label="Fashion">
-                                <option>Men Clothing</option>
-                                <option>Women Clothing</option>
-                                <option>Men Footwear</option>
-                                <option>Women Footwear</option>
-                                <option>Men Watches and Jewelry</option>
-                                <option>Women Watche and jewelry</option>
-                                <option>Babies and Kid</option>
-                                <option>Health and Beauty</option>
+                                <option value="men clothing">Men Clothing</option>
+                                <option value="women clothing">Women Clothing</option>
+                                <option value="men footwear">Men Footwear</option>
+                                <option value="women footwear">Women Footwear</option>
+                                <option value="men jewelry">Men Watches and Jewelry</option>
+                                <option value="women jewelry">Women Watches and jewelry</option>
+                                <option value="babies and kid">Babies and Kid</option>
+                                <option value="health and beauty">Health and Beauty</option>
                               </optgroup>
                               <optgroup label="Electronic">
-                                <option>Phones</option>
-                                <option>Tablets</option>
-                                <option>Computers</option>
-                                <option>Phones Accessories</option>
-                                <option>Computer Accessories</option>
-                                <option>Digital Cameras</option>
-                                <option>Gaming Conosole</option>
-                                <option>Television</option>
-                                <option>peakers and Home audio</option>
+                                <option value="phone">Phones</option>
+                                <option value="tablet">Tablets</option>
+                                <option value="computer">Computers</option>
+                                <option value="phone accessories">Phones Accessories</option>
+                                <option value="computer accessories">Computer Accessories</option>
+                                <option value="digital camera">Digital Cameras</option>
+                                <option value="gaming console">Gaming Conosole</option>
+                                <option value="television">Television</option>
+                                <option value="audio device">Speakers and Home audio</option>
                               </optgroup>
                               <optgroup label="Real estate">
-                                <option>Room and Apartment for rent</option>
-                                <option>Room and Apartment for sale</option>
-                                <option>Land and plot for rent</option>
-                                <option>Land and plot for sale</option>
-                                <option>Commercial property for rent</option>
-                                <option>Commercial property for sale</option>
+                                <option value="house for rent">Room and Apartment for rent</option>
+                                <option value="house for sale">Room and Apartment for sale</option>
+                                <option value="land for rent">Land and plot for rent</option>
+                                <option value="land for sale">Land and plot for sale</option>
+                                <option value="store for rent">Commercial property for rent</option>
+                                <option value="store for sale">Commercial property for sale</option>
                               </optgroup>
                               <optgroup label="Automobile">
-                                <option>Cars and Truck</option>
-                                <option>Motorcyle and Bicycle</option>
-                                <option>Car parts and Accessories</option>
-                                <option>Motorcycle parts and Accessories</option>
+                                <option value="cars">Cars and Truck</option>
+                                <option value="bike">Motorcyle and Bicycle</option>
+                                <option value="car part">Car parts and Accessories</option>
+                                <option value="bike part">Motorcycle parts and Accessories</option>
                               </optgroup>
                             </select>
+                        <span class="alert-danger" id="category_error_message"></span>
+                        <label for="">*</label>
                         <div class="form-group ">
-                                <input type="text" name="region" list="regions" id="region" class="form-control" placeholder="Select Region">
-                                <datalist id="regions">
+                            <input type="text" name="region" list="regions" id="region" class="form-control" placeholder="Select Region">
+                            <datalist id="regions">
+                                    <option value="Centre">
+                                    <option value="Littoral">
+                                    <option value="West">
+                                    <option value="South west">
+                                    <option value="North west">
+                                    <option value="North">
+                                    <option value="Far North">
+                                    <option value="Adamawa">
+                                    <option value="South">
+                                    <option value="East">
+                                </datalist>
+                            <span class="alert-danger" id="region_error_message"></span>
+                            <label for="">*</label>
+                        </div>
+                        <div class="form-group ">
+                            <input type="text" name="town" list="townlist" id="town" class="form-control" placeholder="Select Town">
+                            <datalist id="townlist">
                                     <option value="Centre">
                                     <option value="Littoral">
                                     <option value="West">
@@ -82,49 +104,44 @@
                                     <option value="Adamawa">
                                     <option value="South">
                                     <option value="East">
-                                    <option value="sss">
+                                    <option value="Far North">
                                 </datalist>
+                            <span class="alert-danger" id="town_error_message"></span>
+                            <label for="">*</label>
                         </div>
                         <div class="form-group ">
-                                <input type="text" name="region" list="regions" id="region" class="form-control" placeholder="Select Town">
-                                <datalist id="regions">
-                                    <option value="Centre">
-                                    <option value="Littoral">
-                                    <option value="West">
-                                    <option value="South west">
-                                    <option value="North west">
-                                    <option value="North">
-                                    <option value="Adamawa">
-                                    <option value="South">
-                                    <option value="East">
-                                    <option value="sss">
-                                </datalist>
+                            <input id="price" type="number" name="price" placeholder="Product Price" class="form-control">
+                            <span class="alert-danger" id="price_error_message"></span>
+                            <label for="">*</label>
                         </div>
                         <div class="form-group ">
-                                <input id="price" type="number" name="price" placeholder="Product Price"
-                                    class="form-control" >
-                        </div>
-                        <div class="form-group ">
-                                <input id="phone" type="number" name="phone" placeholder="Phone Number"
-                                    class="form-control" >
+                            <input id="phone" type="number" name="phone" placeholder="Phone Number" class="form-control">
+                            <span class="alert-danger" id="phone_error_message"></span>
+                            <label for="">*</label>
                         </div>
                         <div class="form-group">
-                            <textarea name="description" id="description" cols="5" rows="5" class="form-control" placeholder="enter description" ></textarea>
+                            <textarea name="description" id="description" cols="5" rows="5" class="form-control" placeholder="enter description"></textarea>
+                            <span class="alert-danger" id="description_error_message"></span>
+                            <label for="">*</label>
                         </div>
                         <div class="form-group">
                             <label for="photos">Product Photos</label>
-                            <input type="file" class="form-control-file" id="customFile" multiple >
+                            <input type="file" class="form-control-file" id="customFile" multiple>
+                            <span class="alert-danger" id="customFile_error_message"></span>
+                            <label for="">*</label>
                         </div>
                         <div class="form-group form-check">
-                            <input class="form-check-input" type="checkbox" name="term" id="term" > Accept Terms and Condition
+                            <input class="form-check-input" type="checkbox" name="term" id="term"> Accept Terms and Condition
+                            <span class="alert-danger" id="term_error_message"></span>
                         </div>
-                            <button class="btn btn-warning btn-block" type="submit">Upload</button>
+                        <button class="btn btn-warning btn-block" type="submit">Upload</button>
 
-                    </form>
-        </div> <!-- end  login-container -->
+                </form>
+                </div>
+                <!-- end  login-container -->
 
-    </div>
-</div>
+            </div>
+        </div>
 </body>
 
 </html>
