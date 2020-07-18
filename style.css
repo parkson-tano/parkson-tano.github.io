@@ -1,30 +1,123 @@
-
-input[type=text], input[type=tel], input[type=email], input[type=password]{
-    border: solid rgb(83, 31, 182);
-}
-input[type=submit]{
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: auto;
-    text-decoration: none;
+.carousel p {
+    color: #0a0a0a;
+    font-weight: bold;
+    font-size: 30px;
     margin: auto;
-    cursor: pointer;
 }
-input[type=text]:focus, [type=email]:focus, [type=tel]:focus,
-[type=password]:focus {
-    background-color: lightblue;
-    border: solid #555;
+
+#searchForm {
+    float: center;
+    position: absolute;
+    top: 40%;
 }
-btn-facebook {
-    background-color: rgba(46, 26, 230, 0.952);
-    color: ;
+
+@media screen and (max-width: 500px) {
+    p {
+        color: #000000;
+        font-weight: bold;
+        font-size: 20px;
+        margin: auto;
+    }
 }
-btn-google {
-    background-color: rgb(114, 236, 66);
-    color: rgb(182, 88, 88);
+
+.form-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 20px;
+    float: none;
 }
-.nav-link:hover{
-    border-top: solid green;
-    border-bottom: solid green;
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.form-title img {
+    float: center;
+    margin: auto;
+    position: relative;
+    left: 35%;
+    width: 30%;
+    border: 1px solid red;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.form-group {
+    border-style: none;
+    box-shadow: none;
+    padding: auto;
+    margin: auto;
+}
+
+.select-cat {
+    outline: none;
+    box-shadow: none !important;
+    padding-bottom: auto;
+    border-style: none none solid;
+    border-bottom-color: green;
+    border-style: none none solid;
+    border-bottom-color: tan;
+}
+
+.form-group select:focus {
+    outline: none;
+    box-shadow: none;
+    border: .5px solid #34eb49;
+}
+
+.form-group input[type=text],
+input[type=number],
+input[type=email],
+input[type=password] {
+    outline: none;
+    padding: 10px 5px;
+    box-shadow: none !important;
+    border-style: none none solid;
+    border-bottom-color: green;
+    border-style: none none solid;
+    border-bottom-color: tan;
+}
+
+.form-group input:focus {
+    outline: none;
+    box-shadow: none;
+    border: .5px solid #34eb49;
+}
+
+.form-group textarea:focus {
+    outline: none;
+    box-shadow: none;
+    border: .5px solid #34eb49;
+}
+
+.form-group {
+    border-style: none;
+    box-shadow: none;
+    margin: 2px 2px 2px;
+}
+
+.form-group textarea {
+    outline: none;
+    box-shadow: none !important;
+    border: .5px solid black;
+}
+
+.form-group input:focus {
+    outline: none;
+    box-shadow: none;
+    border: .5px solid #34eb49;
+}
+
+.form-group textarea:focus {
+    outline: none;
+    box-shadow: none;
+    border: .5px solid #34eb49;
+}
+
+.fas {
+    font-size: 20px;
 }
